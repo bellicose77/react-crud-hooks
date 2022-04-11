@@ -9,11 +9,15 @@ const AddUserForm = () => {
         const dt = e.target.value;
         setUser({...user,[e.target.name]:dt})
         // console.log("Google ")
+    };
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        
     }
     console.log(user);
     return (
         <div>
-     <form>
+     <form onSubmit={handleSubmit}>
       <label>Name</label>
       <input type="text" onChange={handleInput} name="name" value={user.name} />
       <label>Username</label>
