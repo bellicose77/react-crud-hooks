@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AddUserForm = () => {
+const AddUserForm = (props) => {
     const[user,setUser]=useState({
         name:'',
         username:''
@@ -12,7 +12,9 @@ const AddUserForm = () => {
     };
     const handleSubmit =(e)=>{
         e.preventDefault();
-        
+        props.addUser(user);
+        setUser(user);
+
     }
     console.log(user);
     return (
