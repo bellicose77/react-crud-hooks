@@ -6,7 +6,8 @@ function App() {
   const fakedata=[{
     id:1,name:"dulal",username:"something"
   },
-  {id:2,name:"ponok"}
+  {id:2,name:"ponok",username:"nothing"},
+  {id:3,name:"junaied",username:"everything"}
 ]
   return (
     <div className="container">
@@ -17,7 +18,7 @@ function App() {
         </div>
         <div className="flex-large">
           <h2>View users</h2>
-          <UserTable></UserTable>
+          <UserTable fakedata={fakedata}></UserTable>
         </div>
       </div>
     </div>

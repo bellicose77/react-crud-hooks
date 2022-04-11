@@ -1,6 +1,7 @@
 import React from 'react';
 
-const UserTable = () => {
+const UserTable = (props) => {
+    console.log(props.fakedata)
     return (
         <div>
            <table>
