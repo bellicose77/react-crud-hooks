@@ -10,7 +10,7 @@ function App() {
   {id:2,name:"ponok",username:"nothing"},
   {id:3,name:"junaied",username:"everything"}
 ]
-const[users,setUsers]=useState(fakedata)
+const[users,setUsers]=useState(fakedata);
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
