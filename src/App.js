@@ -13,7 +13,8 @@ function App() {
 ]
 const[users,setUsers]=useState(fakedata);
 const addUser = (user)=>{
-  user.id=users.length()+1;
+  console.log(user.length);
+  user.id=users.length+ 1;
   setUsers([...users,user])
 }
   return (

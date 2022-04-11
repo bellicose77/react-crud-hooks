@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const AddUserForm = (props) => {
+    console.log("comming to data",props.addUser)
     const[user,setUser]=useState({
         name:'',
         username:''
@@ -13,7 +14,7 @@ const AddUserForm = (props) => {
     const handleSubmit =(e)=>{
         e.preventDefault();
         props.addUser(user);
-        setUser(user);
+        //setUser(user);
 
     }
     console.log(user);
