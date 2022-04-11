@@ -2,8 +2,8 @@ import React from 'react';
 
 const UserTable = (props) => {
    
-    const data = props.users;
-    console.log(data)
+    const datas = props.users;
+    console.log(datas)
     // const{id,name,username}=props.fakedata;
     return (
         <div>
@@ -16,15 +16,19 @@ const UserTable = (props) => {
       </tr>
     </thead>
     <tbody>
-        {}
-      <tr>
-        <td></td>
-        <td></td>
-        <td>
-          <button className="button muted-button">Edit</button>
-          <button className="button muted-button">Delete</button>
-        </td>
-      </tr>
+        {
+            datas.map(data=>( <tr>
+                <td>{data.name}</td>
+                <td>{data.username}</td>
+                <td>
+                  <button className="button muted-button">Edit</button>
+                  <button className="button muted-button">Delete</button>
+                </td>
+              </tr>
+
+            ))
+        }
+     
     </tbody>
   </table> 
         </div>
