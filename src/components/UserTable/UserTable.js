@@ -1,7 +1,8 @@
 import React from 'react';
 
 const UserTable = (props) => {
-    console.log(props.fakedata)
+    // console.log(props.fakedata)
+    const{id,name,username}=props.fakedata;
     return (
         <div>
            <table>
@@ -14,8 +15,8 @@ const UserTable = (props) => {
     </thead>
     <tbody>
       <tr>
-        <td>Name data</td>
-        <td>Username data</td>
+        <td>{name}</td>
+        <td>{username}</td>
         <td>
           <button className="button muted-button">Edit</button>
           <button className="button muted-button">Delete</button>
