@@ -3,6 +3,7 @@ import React from 'react';
 const UserTable = (props) => {
    
     const datas = props.users;
+    const deleteUser = props.handleDelete;
     console.log(datas)
     // const{id,name,username}=props.fakedata;
     return (
@@ -22,7 +23,7 @@ const UserTable = (props) => {
                 <td>{data.username}</td>
                 <td>
                   <button className="button muted-button">Edit</button>
-                  <button onClick={()=>props.handleDelete(datas.id)} className="button muted-button">Delete</button>
+                  <button onClick={()=>deleteUser(data.id)} className="button muted-button">Delete</button>
                 </td>
               </tr>
 

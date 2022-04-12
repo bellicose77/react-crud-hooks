@@ -17,7 +17,8 @@ const addUser = (user)=>{
   user.id=users.length+ 1;
   setUsers([...users,user])
 }
-const handleDelete=()=>{
+const handleDelete=(id)=>{
+  setUsers(users.filter(user => user.id !== id));
   console.log("delete button")
 }
   return (
