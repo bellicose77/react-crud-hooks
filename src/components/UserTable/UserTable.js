@@ -22,7 +22,7 @@ const UserTable = (props) => {
                 <td>{data.username}</td>
                 <td>
                   <button className="button muted-button">Edit</button>
-                  <button onClick={()=>handleDelete} className="button muted-button">Delete</button>
+                  <button onClick={()=>props.handleDelete} className="button muted-button">Delete</button>
                 </td>
               </tr>
 

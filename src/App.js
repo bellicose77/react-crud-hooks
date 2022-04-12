@@ -17,6 +17,9 @@ const addUser = (user)=>{
   user.id=users.length+ 1;
   setUsers([...users,user])
 }
+const handleDelete=()=>{
+  console.log("delete button")
+}
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
@@ -27,7 +30,7 @@ const addUser = (user)=>{
         </div>
         <div className="flex-large">
           <h2>View users</h2>
-          <UserTable users={users}></UserTable>
+          <UserTable users={users} handleDelete={handleDelete}></UserTable>
         </div>
       </div>
     </div>
