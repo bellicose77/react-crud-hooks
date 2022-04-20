@@ -12,6 +12,7 @@ function App() {
   {id:3,name:"junaied",username:"everything"}
 ]
 const[users,setUsers]=useState(fakedata);
+const[editing,setEditing]=useState(false)
 const addUser = (user)=>{
   console.log(user.length);
   user.id=users.length+ 1;
