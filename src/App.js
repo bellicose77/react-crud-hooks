@@ -24,6 +24,10 @@ const handleDelete=(id)=>{
   setUsers(users.filter(user => user.id !== id));
   console.log("delete button")
 }
+const editrow = (user)=>{
+  setEditing(true);
+  setCurrentuser({id:user.id,name:user.name,username:user.username})
+}
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
