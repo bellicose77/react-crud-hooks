@@ -11,8 +11,9 @@ function App() {
   {id:2,name:"ponok",username:"nothing"},
   {id:3,name:"junaied",username:"everything"}
 ]
+const initialFormState={id:null,name:'',username:''}
 const[users,setUsers]=useState(fakedata);
-const[editing,setEditing]=useState(false)
+const[editing,setEditing]=useState(false);
 const addUser = (user)=>{
   console.log(user.length);
   user.id=users.length+ 1;
